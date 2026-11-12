@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cdlshs-feedtrack
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    # Render sets $PORT automatically; Dockerfile reads it via ENV
+    # After deploy, add these in Render Dashboard > Environment:
+    #   SMTP_HOST=smtp.gmail.com
+    #   SMTP_PORT=587
+    #   SMTP_USER=your@gmail.com
+    #   SMTP_PASS=your_app_password   (Gmail App Password, NOT regular password)
+    #   SMTP_FROM=your@gmail.com

@@ -1,0 +1,13 @@
+# --- Secrets (NEVER commit these) ---
+feedtrack-server.json
+feedtrack-auth-state.json
+
+# --- Build / export artifacts ---
+*.xlsx
+*.csv
+*.log
+*.tar
+
+# --- OS junk ---
+Thumbs.db
+.DS_Store
